@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "SocksSwitch",
+  "version": "1.0",
+  "description": "一个简单的Socks5代理切换管理器",
+  "permissions": [
+    "proxy",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SocksSwitch</title>
+  <style>
+    /* 添加一些基本样式 */
+    body {
+      width: 300px;
+      padding: 10px;
+    }
+    input, select, button {
+      margin: 5px 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h2>SocksSwitch</h2>
+  <form id="proxyForm">
+    <input type="text" id="host" placeholder="主机地址" required>
+    <input type="number" id="port" placeholder="端口" required>
+    <input type="text" id="username" placeholder="用户名">
+    <input type="password" id="password" placeholder="密码">
+    <button type="submit">添加代理</button>
+  </form>
+  <h3>选择代理</h3>
+  <select id="proxyList"></select>
+  <button id="applyProxy">应用选中的代理</button>
+  <script src="popup.js"></script>
+</body>
+</html>
